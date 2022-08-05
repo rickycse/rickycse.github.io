@@ -259,7 +259,7 @@ Home Page
 }
 
 /* Images */
-img {
+section img {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -267,8 +267,17 @@ img {
     border: 1px solid var(--dark-bg-text);
 }
 
-.contacts img {
-    max-width: 30px;
+.contacts img{
+    width: 40px;
+    border: none;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.contacts a {
+    padding: 12px;
 }
 
 /* Positioning */
@@ -278,23 +287,10 @@ img {
     padding-bottom: 1em;
 }
 
-.section-block, .section-title, .contacts-list {
+.section-block, .section-title {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-}
-
-.contacts ul li {
-    list-style: none;
-    padding-right: 12px;
-    padding-top: 12px;
-
-    float: left;
-    display: inline;
-}
-
-.contacts img {
-    border: none;
 }
 
 /* Tags */
@@ -303,6 +299,7 @@ img {
 }
 
 .item-tags li {
+    color: #e8e6e3;
     display: inline-block;
     font-size: .8em;
     margin: 10px 10px 0 0;
@@ -320,4 +317,8 @@ img {
 
 #GITPAGES .item-tags li {
     background-color: #B33030;
+}
+
+#ARDUINO .item-tags li {
+    background-color: #1C658C;
 }

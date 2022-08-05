@@ -51,13 +51,21 @@ const text = {
         subtitle: 'Personal Portfolio',
         points: ['Developed a simple website resume using HTML, CSS, and JavaScript.', 'Utilized Github Pages to statically host a website.','Implemented Vue Components and simplified the process of adding onto the website'],
         tags: ['HTML', 'JavaScript', 'CSS', 'Vue Components', 'Git Pages'], 
+    },
+
+    ARDUINO: {
+        title: 'Arduino Uno',
+        subtitle: 'Sound Activated LEDs',
+        points: ['Built a sound-activated LED strip using the Arduino IDE and language.', 'Utilized MOSFETs to control LEDs and prevent overvoltage to the Arduino Board.'],
+        tags: ['C++','Arduino Uno', 'IRLZ44N', 'KY-037 Sound Sensor'], 
     }
 }
 
-const LASSONDE = new Vue({el: '#LASSONDE'})
-const BIKEHUB = new Vue({el: '#BIKEHUB'})
-const PYGAME = new Vue({el: '#PYGAME'})
-const DISCORD = new Vue({el: '#DISCORD'})
-const GITPAGES = new Vue({el: '#GITPAGES'})
+const LASSONDE = new Vue({el: '#LASSONDE'});
+const BIKEHUB = new Vue({el: '#BIKEHUB'});
+const PYGAME = new Vue({el: '#PYGAME'});
+const DISCORD = new Vue({el: '#DISCORD'});
+const GITPAGES = new Vue({el: '#GITPAGES'});
+const ARDUINO = new Vue({el: '#ARDUINO'});
 
-console.log(text.GITPAGES.color)
+console.log(text.GITPAGES.color);
