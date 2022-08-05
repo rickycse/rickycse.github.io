@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
+@media (max-width: 1920px){
+    div.btn-container {
+        font-size: 20px;
+    }
+
+    div.home-textbody {
+        font-size: 18px;
+    }
+
+    div.section-title {
+        font-size: 36px;
+    }
+    
+    div.items {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1440px){
+    div.btn-container {
+        font-size: 16px;
+    }
+
+    div.home-textbody {
+        font-size: 14px;
+    }
+
+    div.section-title {
+        font-size: 32px;
+    }
+    
+    div.items {
+        font-size: 13px;
+    }
+}
+
 @media (max-width: 1025px){
     div.section-block {
         grid-template-columns: none;

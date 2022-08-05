@@ -36,7 +36,7 @@ const text = {
         title: 'Jellyfish Blaster',
         subtitle: 'Animated Python Game',
         points: ['Successfully created an environment to load and transform two-dimensional game assets, with or without user interaction.','Facilitated the process of fetching and loading animations by organizing bulk image folders into specialized folders per animation with the OS module.'],
-        tags: ['Python', 'Pygame', 'Os Module']
+        tags: ['Python', 'Pygame', 'Sprites', 'Os Module']
     }, 
 
     DISCORDBOT: {
