@@ -39,6 +39,13 @@ const text = {
         tags: ['Python', 'Pygame', 'Sprites', 'Os Module']
     }, 
 
+    FINTECH: {
+        title: 'Fintechify',
+        subtitle: 'Banking Application',
+        points: ['Demonstrated the ability to fetch currency conversion data from an online finance API', 'Designed a user-friendly, interactive banking application featuring deposits, withdrawals, money conversion, etc.'],
+        tags: ['Java', 'OkHttp3', 'Android Widgets', 'Figma']
+    },
+
     DISCORDBOT: {
         title: 'Tabikat Bot',
         subtitle: 'Personal Discord.js Bot',
@@ -49,7 +56,7 @@ const text = {
     GITPAGES: {
         title: 'Ricky Tran',
         subtitle: 'Personal Portfolio',
-        points: ['Developed a simple website resume using HTML, CSS, and JavaScript.', 'Utilized Github Pages to statically host a website.','Implemented Vue Components and simplified the process of adding onto the website'],
+        points: ['Developed a simple website resume using HTML, CSS, and JavaScript.', 'Utilized Github Pages to statically host a website.','Implemented Vue Components to simplify the process of adding onto the website'],
         tags: ['HTML', 'JavaScript', 'CSS', 'Vue Components', 'Git Pages'], 
     },
 
@@ -64,8 +71,7 @@ const text = {
 const LASSONDE = new Vue({el: '#LASSONDE'});
 const BIKEHUB = new Vue({el: '#BIKEHUB'});
 const PYGAME = new Vue({el: '#PYGAME'});
+const FINTECH = new Vue({el: '#FINTECH'});
 const DISCORD = new Vue({el: '#DISCORD'});
 const GITPAGES = new Vue({el: '#GITPAGES'});
 const ARDUINO = new Vue({el: '#ARDUINO'});
-
-console.log(text.GITPAGES.color);
