@@ -7,12 +7,21 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/x-icon" href="./icons/face.png">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://unpkg.com/vue@2"></script>
 </head>
 
 <body> 
     <div class="btn-container">
-        <button class="btn" id="btn">Light</button> 
+        <button class="btn" id="btn"><img src="./icons/full-moon.png" alt="Theme Btn" id="themebtn"></button> 
+    </div>
+
+    <div class="home-btn">
+        <a href="#"><img src="./icons/face.png" alt="Home Btn" class="homebtn"></a>
+    </div>
+
+    <div class="resume-download">
+        <a href="https://docs.google.com/document/d/1lHw4mAzuoeGvJJwFv-Z3WdhKH7B29-iL2lpxUTh3DfM/edit?usp=sharing" target="_blank"><img src="./icons/pdf.png" alt="Resume Download" class="download"></a>
     </div>
 
     <section class="home">
@@ -58,28 +67,28 @@
                 <img src="./media/arcadepygame.jpg" alt="Pygame" class="section-image">
             </div>
 
-            <div class="section-block">
+            <div class="section-block fade-in">
                 <div id="FINTECH">
                     <textblock title="FINTECH"></textblock>
                 </div>
                 <img src="./media/fintechify.png" alt="Fintechify" class="section-image">
             </div>
 
-            <div class="section-block">
+            <div class="section-block fade-in">
                 <div id="DISCORD">
                     <textblock title="DISCORDBOT"></textblock>
                 </div>
                 <img src="./media/discordbot.jpg" alt="Discord Bot" class="section-image">
             </div>
 
-            <div class="section-block">
+            <div class="section-block fade-in">
                 <div id="GITPAGES">
                     <textblock title="GITPAGES"></textblock>
                 </div>
                 <img src="./media/webfolio.jpg" alt="Personal Portfolio" class="section-image">
             </div>
 
-            <div class="section-block">
+            <div class="section-block fade-in">
                 <div id="ARDUINO">
                     <textblock title="ARDUINO"></textblock>
                 </div>
@@ -87,11 +96,11 @@
             </div>
         </section>
 
-        <section class="contacts fade-in">
+        <section class="contacts">
             <!-- <div class="section-title">Contacts</div> -->
-            <a href="mailto:rickie.tran7@gmail.com"><img src="./icons/gmail.png"></a>
-            <a href="https://www.linkedin.com/in/ricky-tran-b6938a22b/"><img src="./icons/linkedin.png"></a>
-            <a href="https://github.com/Rickie457"><img src="./icons/github.png"></a>
+            <a class="fade-in" href="mailto:rickie.tran7@gmail.com"><img src="./icons/gmail.png"></a>
+            <a class="fade-in" href="https://www.linkedin.com/in/ricky-tran-b6938a22b/"><img src="./icons/linkedin.png"></a>
+            <a class="fade-in" href="https://github.com/Rickie457"><img src="./icons/github.png"></a>
         </section>
     </div>
 

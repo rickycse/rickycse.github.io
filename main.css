@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 @media (max-width: 1920px){
-    div.btn-container {
-        font-size: 20px;
-    }
-
     div.home-textbody {
         font-size: 18px;
     }
@@ -19,25 +15,32 @@
 }
 
 @media (max-width: 1440px){
-    div.btn-container {
-        font-size: 16px;
+    div.section-block, div.section-title {
+        width: 65vw;
     }
 
     div.home-textbody {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     div.section-title {
-        font-size: 32px;
+        font-size: 40px;
     }
     
     div.items {
-        font-size: 13px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 1025px){
-    div.section-block {
+    img#themebtn, img.download, img.homebtn{
+        width: 75px;
+    }
+
+    div.hello {
+        font-size: 10rem;
+    }
+    div.section-block, div.section-title {
         grid-template-columns: none;
         grid-auto-rows: auto;
         row-gap: 0;
@@ -48,7 +51,7 @@
     }
 
     div.section-title {
-        font-size: 24px;
+        font-size: 36px;
     }
     
     div.items {
@@ -57,21 +60,49 @@
 }
 
 @media (max-width: 768px){
+    img#themebtn, img.download, img.homebtn{
+        width: 65px;
+    }
+
+    img.download {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    img.homebtn {
+        left: 15px;
+        top: 15px;
+    }
+
+    div.btn-container {
+        top: 15px;
+        right: 15px;
+    }
+
     p.about {
         width: 60vw;
     }
     div.section-block, div.section-title, div.contacts-list {
-        width: 70vw;
+        width: 65vw;
     }
 }
 
 @media (max-width: 480px){
+    div.hello {
+        font-size: 6rem;
+    }
+
+    img#themebtn, img.download, img.homebtn{
+        display: none;
+    }
+
     div.home-textbody{
         font-size: 6.5px;
     }
 
-    p.about {
-        width: 55vw;
+    p.about{
+        width: 60vw;
+        font-size: 12px;
     }
 
     div.items {
@@ -150,33 +181,69 @@ body {
 
 /* 
 ==============
+Open Resume
+==============
+*/
+.download {
+    width: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+}
+
+.download:hover {
+    animation: jumping 0.75s infinite;
+}
+
+@keyframes jumping {
+    0%,
+    100%  { 
+        transform: translateY(0); 
+    }
+    50%  { 
+        transform: translateY(-15px); 
+    }
+}
+
+/* 
+=============
+Top Scroll Btn
+=============
+*/
+.homebtn {
+    width: 100px;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+}
+
+.homebtn:hover {
+    animation: tada 1s;
+}
+/* 
+==============
 Light-Dark Btn 
 ==============
 */
+
 .btn-container {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 30px;
 }
 
 .btn {
-    font-size: 1em;
-    border: solid 2px var(--dark-bg-text);
-    padding: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-
-    border-radius: 4px;
-    color: var(--dark-bg-text);
-    background-color: var(--dark-bg-color);
-    box-shadow: inset 0 0 0 0 var(--dark-bg-text);
-    transition: ease-in-out 0.3s;
-    outline: none;
+    background-color: transparent;
+    border: none;
 }
 
-.btn:hover {
-    box-shadow: inset 125px 0 0 0 var(--dark-bg-text);
-    color: var(--dark-bg-color);
+#themebtn {
+    width: 100px;
+}
+
+#themebtn:hover {
+    animation: swing 1s;
 }
 
 /* =========
@@ -221,7 +288,7 @@ Home Page
 }
 
 .hello {
-    font-size: 12em;
+    font-size: 12rem;
     border-right: 2px solid var(--dark-bg-text);
     margin: 0 auto;
 }
@@ -260,6 +327,7 @@ Home Page
 
 .fade-in.appear {
     opacity: 1;
+    animation: fadeInUp 1s linear;
 }
 
 .section-title {
@@ -304,7 +372,7 @@ section img {
 }
 
 .contacts img{
-    width: 40px;
+    width: 3rem;
     border: none;
 }
 

@@ -1,19 +1,23 @@
 const btn = document.getElementById('btn');
+const btnImage = document.getElementById('themebtn')
 const body = document.getElementsByTagName("BODY")[0];
 var colors = ['#e8e6e3', '#181a1b', '#ffffff', '#000000']
 const rootStyle = document.querySelector(':root').style;
+var themeCounter = 0;
 
 btn.addEventListener("click", function() {
-    if (btn.innerHTML == "Light") {
-        btn.innerHTML = "Dark";
+    if (themeCounter % 2 == 0) {
+        themebtn.src = "./icons/sun.png";
         rootStyle.setProperty('--dark-bg-text', colors[3]);
         rootStyle.setProperty('--dark-bg-color', colors[4]);
     }
     else { 
-        btn.innerHTML = "Light";
+        themebtn.src = "./icons/full-moon.png";
         rootStyle.setProperty('--dark-bg-text', colors[0]);
         rootStyle.setProperty('--dark-bg-color', colors[1]);
     }
+    themeCounter+=1;
+    console.log(true);
 });
 
 window.onbeforeunload = function () {
@@ -25,7 +29,7 @@ const sections = document.getElementsByClassName('fade-in');
 var bounding = sections[counter].getBoundingClientRect();
 
 window.addEventListener('scroll', () => {
-    if (isElementXPercentInViewport(sections[counter], 25)) {
+    if (isElementXPercentInViewport(sections[counter], 10)) {
         if (!sections[counter].classList.contains('appear')){ 
             sections[counter].classList.add('appear'); 
         }

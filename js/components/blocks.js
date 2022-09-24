@@ -23,7 +23,7 @@ const text = {
     YORK: {
         title: 'York University',
         subtitle: 'Hons. B.Sc Computer Science Student',
-        points: ['CGPA: 3.8 / 4.0', 'Notable Courses: Discrete Mathematics, Programming for Mobile Computing, Applied Calculus I & II, Intro. to Computer Science & Programming.']
+        points: ['CGPA: 3.16 / 4.0', 'Notable Courses: Discrete Mathematics, Programming for Mobile Computing, Applied Calculus I & II, Intro. to Computer Science & Programming.']
     },
 
     BIKEHUB: {
