@@ -211,7 +211,7 @@ Open Resume
 Top Scroll Btn
 =============
 */
-.homebtn {
+/* .homebtn {
     width: 100px;
     position: fixed;
     top: 20px;
@@ -220,14 +220,37 @@ Top Scroll Btn
 
 .homebtn:hover {
     animation: tada 1s;
-}
+} */
+
 /* 
 ==============
 Light-Dark Btn 
 ==============
 */
-
 .btn-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.btn {
+    font-size: 1em;
+    border: solid 2px var(--dark-bg-text);
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 4px;
+    color: var(--dark-bg-text);
+    background-color: var(--dark-bg-color);
+    box-shadow: inset 0 0 0 0 var(--dark-bg-text);
+    transition: ease-in-out 0.3s;
+    outline: none;
+}
+.btn:hover {
+    box-shadow: inset 125px 0 0 0 var(--dark-bg-text);
+    color: var(--dark-bg-color);
+}
+
+/* .btn-container {
     position: fixed;
     top: 20px;
     right: 30px;
@@ -244,7 +267,7 @@ Light-Dark Btn
 
 #themebtn:hover {
     animation: swing 1s;
-}
+} */
 
 /* =========
 Home Page
@@ -322,12 +345,11 @@ Home Page
 
 .fade-in {
     opacity: 0;
-    transition: opacity 500ms ease-in;
+    transition: opacity 1.15s ease-in;
 }
 
 .fade-in.appear {
     opacity: 1;
-    animation: fadeInUp 1s linear;
 }
 
 .section-title {
