@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Ricky Tran</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" type="image/x-icon" href="./icons/face.png">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -12,99 +12,109 @@
 </head>
 
 <body> 
-    <div class="btn-container">
-        <button class="btn" id="btn">Light</button> 
-    </div>
-
-    <!-- <div class="btn-container">
-        <button class="btn" id="btn"><img src="./icons/full-moon.png" alt="Theme Btn" id="themebtn"></button> 
-    </div>
-
-    <div class="home-btn">
-        <a href="#"><img src="./icons/face.png" alt="Home Btn" class="homebtn"></a>
-    </div> -->
-
     <div class="resume-download">
         <a href="https://docs.google.com/document/d/1lHw4mAzuoeGvJJwFv-Z3WdhKH7B29-iL2lpxUTh3DfM/edit?usp=sharing" target="_blank"><img src="./icons/pdf.png" alt="Resume Download" class="download"></a>
     </div>
+        
+    <div class="main-nav">
+        <div class="nav-container">
+            <a class="home-btn-container" href="#">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 7.90637V18C19 19.1046 18.1046 20 17 20H7C5.89543 20 5 19.1046 5 18V7.90637M2 10.0001L10.8531 3.80297C11.5417 3.32092 12.4583 3.32092 13.1469 3.80297L22 10.0001" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
 
-    <section class="home">
-        <div class="home-textbody">
-            <div class="hello typewriter-anim">Hello!</div>
-            <p class="about">
-                I'm Ricky Tran, an upcoming second-year at York University CS. I've previously worked as a bicycle mechanic for CultureLink and I am now pursing a career in software engineering. 
-            </p>
-            <div class="get-in-touch">Get in touch 👉 <a href="mailto:rickie.tran7@gmail.com">rickie.tran7@gmail.com</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
         </div>
-    </section>
+    </div>
+
+    <div class="home">
+        <div class="home-container">
+            <div class="home-bio">
+                <div class="tldr">TLDR;</div>
+                <div class="home-subtitle">In case you're in a hurry</div>
+                <div class="home-textbody">
+                    My name is Ricky Tran and I’m currently a second-year Computer Science student at York University! I’m an aspiring software engineer looking for Summer 2023 Internships so... please hire me ;) 
+                </div>
+                <div id="TLDR-TAGS">
+                    <tags title="TLDR"></tags>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="body-container">
-        <section class="education fade-in">
-            <div class="section-title">Education</div>
-
-            <div class="section-block">
-                <div id="LASSONDE">
-                    <textblock title="YORK"></textblock>
-                </div>
-                <img src="./media/lassondeschool.jpg" alt="Lassonde School of Engineering" class="section-image">
-            </div>
-        </section>
-        
-        <section class="experience fade-in">
-            <div class="section-title">Experience</div>
-
-            <div class="section-block">
-                <div id="BIKEHUB">
-                    <textblock title="BIKEHUB"></textblock>
-                </div>
-                <img src="./media/bikehubico.png" alt="BikeHub" class="section-image">
-            </div>
-        </section>
-
-        <section class="projects fade-in">
+        <section class="projects fade-in" id="projects">
             <div class="section-title">Projects</div>
 
             <div class="section-block">
                 <div id="PYGAME">
                     <textblock title="PYGAME"></textblock>
                 </div>
-                <img src="./media/arcadepygame.jpg" alt="Pygame" class="section-image">
             </div>
 
             <div class="section-block fade-in">
                 <div id="FINTECH">
                     <textblock title="FINTECH"></textblock>
                 </div>
-                <img src="./media/fintechify.png" alt="Fintechify" class="section-image">
             </div>
 
             <div class="section-block fade-in">
                 <div id="DISCORD">
                     <textblock title="DISCORDBOT"></textblock>
                 </div>
-                <img src="./media/discordbot.jpg" alt="Discord Bot" class="section-image">
             </div>
 
             <div class="section-block fade-in">
                 <div id="GITPAGES">
                     <textblock title="GITPAGES"></textblock>
                 </div>
-                <img src="./media/webfolio.jpg" alt="Personal Portfolio" class="section-image">
             </div>
 
             <div class="section-block fade-in">
                 <div id="ARDUINO">
                     <textblock title="ARDUINO"></textblock>
                 </div>
-                <img src="./media/arduino.png" alt="Arduino Project" class="section-image">
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="experience fade-in" id="experience">
+            <div class="section-title">Experience</div>
+            <div class="section-block">
+                <div id="YORKUIT">
+                    <textblock title="YORKUIT"></textblock>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <div id="BIKEHUB">
+                    <textblock title="BIKEHUB"></textblock>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="education fade-in" id="education">
+            <div class="section-title">Education</div>
+
+            <div class="section-block">
+                <div id="LASSONDE">
+                    <textblock title="YORK"></textblock>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts fade-in" id="about">
             <!-- <div class="section-title">Contacts</div> -->
-            <a class="fade-in" href="mailto:rickie.tran7@gmail.com" target="_blank"><img src="./icons/gmail.png"></a>
-            <a class="fade-in" href="https://www.linkedin.com/in/ricky-tran-b6938a22b/" target="_blank"><img src="./icons/linkedin.png"></a>
-            <a class="fade-in" href="https://github.com/Rickie457" target="_blank"><img src="./icons/github.png"></a>
+            <a href="mailto:rickie.tran7@gmail.com" target="_blank"><img src="./icons/gmail.png"></a>
+            <a href="https://www.linkedin.com/in/ricky-tran-b6938a22b/" target="_blank"><img src="./icons/linkedin.png"></a>
+            <a href="https://github.com/Rickie457" target="_blank"><img src="./icons/github.png"></a>
         </section>
     </div>
 
