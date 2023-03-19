@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Ricky Tran</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" type="image/x-icon" href="./icons/face.png">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,18 +15,30 @@
 
 <body> 
     <div class="resume-download">
-        <a href="https://docs.google.com/document/d/1lHw4mAzuoeGvJJwFv-Z3WdhKH7B29-iL2lpxUTh3DfM/edit?usp=sharing" target="_blank"><img src="./icons/pdf.png" alt="Resume Download" class="download"></a>
+        <a href="https://www.overleaf.com/read/fjkgwzzjckxv" target="_blank"><img src="./icons/pdf.png" alt="Resume Download" class="download"></a>
     </div>
         
     <div class="main-nav">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li>
+                <a href="#about">
+                    <span>&#60;</span>About<span>&#8725;&#62;</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <span>&#60;</span>Projects<span>&#8725;&#62;</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience">
+                    <span>&#60;</span>Experience<span>&#8725;&#62;</span>
+                </a>
+            </li>
         </ul>
     </div>
 
-    <div class="home">
+    <div class="home" id="about">
         <div class="home-container">
             <div class="name">RICKY TRAN</div>
             <div class="sub">2ND-YEAR COMP SCI, LOOKING FOR SUMMER 2023 INTERNSHIPS</div>
@@ -38,65 +52,76 @@
     </div>
 
     <div class="body-container">
-        <section class="projects fade-in" id="projects">
+
+        <div class="container">
             <div class="section-title">Projects</div>
-
-            <div class="section-block">
-                <div id="PYGAME">
-                    <textblock title="PYGAME"></textblock>
+            <section class="projects fade-in" id="projects">
+                <div class="section-block">
+                    <div id="PYGAME">
+                        <leftblock title="PYGAME"></leftblock>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section-block fade-in">
-                <div id="FINTECH">
-                    <textblock title="FINTECH"></textblock>
+                <div class="section-block fade-in">
+                    <div id="FINTECH">
+                        <rightblock title="FINTECH"></rightblock>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section-block fade-in">
-                <div id="DISCORD">
-                    <textblock title="DISCORDBOT"></textblock>
+                <div class="section-block fade-in">
+                    <div id="DISCORD">
+                        <leftblock title="DISCORDBOT"></leftblock>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section-block fade-in">
-                <div id="GITPAGES">
-                    <textblock title="GITPAGES"></textblock>
+                <div class="section-block fade-in">
+                    <div id="GITPAGES">
+                        <rightblock title="GITPAGES"></rightblock>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section-block fade-in">
-                <div id="ARDUINO">
-                    <textblock title="ARDUINO"></textblock>
+                <div class="section-block fade-in">
+                    <div id="ARDUINO">
+                        <leftblock title="ARDUINO"></leftblock>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="experience fade-in" id="experience">
+            </section>            
+        </div>
+        
+        <div class="container">
             <div class="section-title">Experience</div>
-            <div class="section-block">
-                <div id="YORKUIT">
-                    <textblock title="YORKUIT"></textblock>
+            <section class="experience fade-in" id="experience">
+                <div class="section-block">
+                    <div id="GDSC">
+                        <rightblock title="GDSC"></rightblock>
+                    </div>
                 </div>
-            </div>
 
-            <div class="section-block">
-                <div id="BIKEHUB">
-                    <textblock title="BIKEHUB"></textblock>
+                <div class="section-block">
+                    <div id="CSHUB">
+                        <leftblock title="CSHUB"></leftblock>
+                    </div>
+                </div>           
+
+                <div class="section-block">
+                    <div id="YORKUIT">
+                        <rightblock title="YORKUIT"></rightblock>
+                    </div>
                 </div>
-            </div>
-
-        </section>
-
-        <section class="education fade-in" id="education">
+            </section>
+        </div>
+        
+        <div class="container">
             <div class="section-title">Education</div>
-
-            <div class="section-block">
-                <div id="LASSONDE">
-                    <textblock title="YORK"></textblock>
+            <section class="education fade-in" id="education">
+                <div class="section-block">
+                    <div id="LASSONDE">
+                        <leftblock title="YORK"></leftblock>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>            
+        </div>
+        
 
         <section class="contacts fade-in" id="about">
             <!-- <div class="section-title">Contacts</div> -->
@@ -106,6 +131,7 @@
         </section>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src='./js/main.js'></script>
     <script src='./js/components/blocks.js'></script>
 </body>

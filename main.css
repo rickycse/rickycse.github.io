@@ -59,30 +59,43 @@ Open Resume
 .main-nav {
     position: fixed;
     width: 100%;
-    margin: auto;    
-
+    margin: auto;
+    
     font-size: 14px;
     z-index: 99;
 }
 
 .main-nav ul {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
+    padding: 1em;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
     font-size: 28px;
+}
+
+.scrolled {
+    background-color: #181B21 !important;
+    transition: background-color 200ms linear;
+}
+
+.unscrolled {
+    background-color: transparent !important;
+    transition: background-color 200ms linear;
 }
 
 .main-nav li{
     display: inline;
-    margin: 1.5em 3em 1.5em 3em;
     font-size: 1em;
+
+    font-weight: bold;
 }
 
-.main-nav li:hover {
-    font-size: 1.05em;
+.main-nav li a:hover {
+    font-size: 1.1em;
 }
 
 .main-nav li a {
@@ -97,6 +110,7 @@ Home Page
     width: 100vw;
     height: 100vh;
     background-image: url('./media/bg/bg.jpg');
+    background-position: center;
 }
 
 .opacity {
@@ -152,21 +166,24 @@ Home Page
     overflow: hidden;
 }
 
-.body-container, .section-title {
-    width: 55vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section {
+.body-container .container {
+    position: relative;
     margin-top: 10vh;
 }
 
+section {
+    width: 60vw;
+    margin: 0 auto;
+}
+
 .section-title {
-    font-size: 3em;
+    font-size: 40px;
     font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid var(--dark-bg-text);
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 0;
+    left: 50px;
 }
 
 .items {
@@ -209,7 +226,6 @@ section {
 .items .image-container img {
     max-width: 100%;
     border-radius: 12px;
-    /* border: 1px solid var(--dark-bg-text); */
 }
 
 /* Tags */
@@ -259,88 +275,74 @@ CONTACTS
 
 
 @media screen and (max-width: 1440px){
-    .body-container, .section-title {
-        width: 65vw;
+    .container {
+        margin-top: 8vh;
     }
-    .main-nav {
-        font-size: 14px;
+    .main-nav ul {
+        width: 55%;
     }
-
+    .section-title {
+        font-size: 32px;
+    }
     .home-container {
-        font-size: 20px;
+        font-size: 36px;
     }
-    
-    .home-container .home-tags {
-        font-size: 16px;
+    .items {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 1025px){
     img.download {
         width: 70px;
+        bottom: 10px;
+        right: 10px;
     }
-
-    .body-container, .section-title {
-        width: 77vw;
-    }
-    .home-btn-container svg {
-        font-size: 65px;
-    }
-    .main-nav li {
-        font-size: 18px;
+    .main-nav ul {
+        width: 65%;
+        font-size: 24px;
     }
     .home-container {
-        width: 55%;
-        left: 42%;
-        font-size: 18px;
+        width: 70%;
+        font-size: 32px;
     }
-
+    .container {
+        margin-top: 2vh;
+    }
+    section {
+        width: 80vw;
+    }
     .section-title {
-        font-size: 2.35em;
+        position: relative;
+        text-align: center;
+        left: 0;
+        font-size: 40px;
+        margin: 1rem;
     }
-
-    .items .text-container {
-        font-size: 14px;
-    }
-    .item-tags {
+    .items {
         font-size: 12px;
     }
 }
 
 @media (max-width: 768px){
     img.download {
-        width: 60px;
-        bottom: 25px;
-        right: 25px;
+        display: none;
     }
-
+    section {
+        width: 95vw;
+    }
     .main-nav ul {
-        display: none;
+        width: 80%;
     }
-
-    .profile-container img {
-        display: none;
-    }
-
     .home-container {
-        left: 50%;
-        width: 70%;
-        font-size: 20px;
-        grid-template-columns: 1fr;
+        width: 80%;
+        font-size: 28px;
     }
-
-    .body-container, .section-title {
-        width: 75vw;
+    .tldr-tag-body {
+        width: 80%;
     }
-
     .items .text-container {
-        font-size: 14px;
-    }
-
-    .items {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        row-gap: 1rem;
+        font-size: 12px;
     }
 }
 
@@ -348,42 +350,42 @@ CONTACTS
     img.download {
         display: none;
     }
-
+    .main-nav {
+        display: none;
+    }
     .home-container {
-        width: 80%;
+        width: 100%;
         font-size: 18px;
     }
-
-    .home-container .home-tags {
-        font-size: 14px;
+    .tldr-tag-body {
+        width: 95%;
     }
-
+    .items {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        column-gap: 0.5rem;
+        font-size: 10px;
+    }
     .items .text-container {
-        font-size: 12px;
-    }
-
-    .main-nav {
-        padding-top: 5px;
-        height: 75px;
-    }
-
-    .home-btn-container svg {
-        width: 50px;
+        margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 320px){
+    section {
+        width: 100vw;
+    }
+    .section-title {
+        font-size: 28px;
+        margin: 0.75rem;
+    }
     .home-container {
-        width: 80%;
         font-size: 14px;
     }
-
-    .home-container .home-tags {
-        font-size: 10px;
+    .tldr-tag-body {
+        width: 100%;
     }
-    
-    .body-container, .section-title {
-        width: 82vw;
-        font-size: 1.35em;
+    .items {
+        font-size: 8px;
     }
 }

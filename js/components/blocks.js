@@ -1,4 +1,4 @@
-Vue.component('textblock',{
+Vue.component('leftblock',{
     props: ['title', 'subtitle'],
     data: function() {
         return {
@@ -8,7 +8,34 @@ Vue.component('textblock',{
 
     template: 
     `<div class="items">
-        <div class="text-container">
+        <div class="image-container">
+            <img class="img" v-bind:src="text.image">
+        </div>
+        <div class="text-container"> 
+            <div class="item-title">{{text.title}}</div>
+            <div class="item-subtitle">{{text.subtitle}}</div>
+            <ul class="item-body">
+                <li v-for="point in text.points">{{point}}</li>
+            </ul>
+            <ul class="item-tags">
+                <li v-for="tag in text.tags" :style="{ 'backgroundColor': text.color}">{{tag}}</li>
+            </ul>
+        </div>
+    </div>
+    `
+});
+
+Vue.component('rightblock',{
+    props: ['title', 'subtitle'],
+    data: function() {
+        return {
+            text: text[this.title]
+        }
+    },
+
+    template: 
+    `<div class="items">
+        <div class="text-container"> 
             <div class="item-title">{{text.title}}</div>
             <div class="item-subtitle">{{text.subtitle}}</div>
             <ul class="item-body">
@@ -19,7 +46,7 @@ Vue.component('textblock',{
             </ul>
         </div>
         <div class="image-container">
-            <img v-bind:src="text.image">
+            <img class="img" v-bind:src="text.image">
         </div>
     </div>
     `
@@ -36,7 +63,7 @@ Vue.component('tags',{
     template: 
     `
     <ul class="home-tags">
-        <li v-for="tag in tags.tags" :style="{ 'backgroundColor': tags.color}">{{tag}}</li>
+        <li v-for="tag in tags.tags">{{tag}}</li>
     </ul>
     `
 });
@@ -52,23 +79,30 @@ const text = {
     YORK: {
         title: 'York University',
         subtitle: 'Hons. B.Sc Computer Science Student',
-        points: ['CGPA: 3.16 / 4.0', 'Notable Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
+        points: ['CGPA: 3.45 / 4.0', 'Notable Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
         image: '../media/lassondeschool.jpg',
     },
 
-    BIKEHUB: {
-        title: 'CultureLink Bike Hub',
-        subtitle: 'Bike Mechanic and Front-Desk Attendant',
-        points: ['Demonstrated the ability to communicate and assist visitors with mechanical concerns.', 'Successfully salvaged, repaired, and assembled over 50 different bicycles.','Supported the biannual bicycle workshops for newcomers by taking an active role in demonstrating assembly, repairs, and salvages.'],
-        image: '../media/bikehubico.png',
+    GDSC: {
+        title: 'Google Developers Student Club',
+        subtitle: 'Technical Lead',
+        points: ['Providing technical support to community members during and after workshop events, ensuring their satisfaction and facilitating a smooth and productive experience.','Leading workshop plannings in collaboration with other Leads and arranging all necessary requirements to enable successful delivery of the workshop, resulting in a diverse range of valuable learning experiences for members.'],
+        image: '../media/gdsc.png',
+    },
+
+    CSHUB: {
+        title: 'Computing Students Hub',
+        subtitle: 'Front-End Developer',
+        points: ['Collaborating with other team members to produce a webstore application using React.js and MaterialUI, giving users an up-to-date and user-friendly experience.','Participating in weekly meetings with the Club President, Technical Directors and development team to review code, design documents, and initialize weekly priorities to stay on task.'],
+        tags: ['React.js', 'MaterialUI', 'JavaScript', 'Jira', 'CSS'],
+        color: '#B33030',
+        image: '../media/cshub.png',
     },
 
     YORKUIT: {
         title: 'York UIT Client Services',
         subtitle: 'Computing Support Assistant',
-        points: ['Spearheaded troubleshooting to cut downtime on computer and network-related issues',
-        'Demonstrated the ability to communicate technical information in plain language.',
-        'Maintained up-to-date knowledge of computer applications, company services, and service procedures to provide clients with the utmost support and customer satisfaction'],
+        points: ['Providing technical support and troubleshooting for internal and external customers via phone, email, and ticketing system, ensuring timely and effective resolution of technical issues and customer satisfaction.', 'Staying abreast of industry technical and business trends to provide clients with the utmost support.'],
         image: '../media/yorkuit.png',
     },
 
@@ -121,7 +155,8 @@ const text = {
 const TAGS = new Vue({el: '#TLDR-TAGS'});
 
 const LASSONDE = new Vue({el: '#LASSONDE'});
-const BIKEHUB = new Vue({el: '#BIKEHUB'});
+const GDSC = new Vue({el: '#GDSC'});
+const CSHUB = new Vue({el: '#CSHUB'});
 const YORKUIT = new Vue({el: '#YORKUIT'});
 const PYGAME = new Vue({el: '#PYGAME'});
 const FINTECH = new Vue({el: '#FINTECH'});
