@@ -109,7 +109,7 @@ const text = {
     PYGAME: {
         title: 'Jellyfish Blaster',
         subtitle: 'Animated Python Game',
-        points: ['Successfully created an environment to load and transform two-dimensional game assets, with or without user interaction.','Facilitated the process of fetching and loading animations by organizing bulk image folders into specialized folders per animation with the OS module.'],
+        points: ['Developed a fast-paced platformer game using PyGame and Asprites to challenge the users hand-eye coordination', 'Efficiently sorted asprite frames into different directories for efficient reading using the OS Module.'],
         tags: ['Python', 'Pygame', 'Sprites', 'Os Module'],
         image: '../media/arcadepygame.jpg',
         color: '#1C658C',
@@ -118,17 +118,17 @@ const text = {
     FINTECH: {
         title: 'Fintechify',
         subtitle: 'Banking Application',
-        points: ['Demonstrated the ability to fetch currency conversion data from an online finance API', 'Designed a user-friendly, interactive banking application featuring deposits, withdrawals, money conversion, etc.'],
+        points: ['Led a team of 3 other members to develop a mobile banking app that lets users deposit, withdraw, calculate taxes, and so on using Java, OkHttp3, and Android Studio.', 'Created and reviewed technical design documents on Figma for coherent designs and facilitated meetings to design, troubleshoot, and execute the project in Java.'],
         tags: ['Java', 'OkHttp3', 'Android Widgets', 'Figma'],
         image: '../media/fintechify.png',
         color: '#645CAA',
     },
 
     DISCORDBOT: {
-        title: 'Tabikat Bot',
+        title: 'Progress Reports Bot',
         subtitle: 'Personal Discord.js Bot',
-        points: ['Utilized Discord API and MongoDB documentation to create an interactive message bot.','Implemented user-friendly and convenient commands (grade calculator, reminders, etc).'],
-        tags: ['Discord.js', 'JavaScript', 'MongoDB', 'Git', 'Ms Module'],
+        points: ['Developed a Discord Bot with Node.js to make degree progress reports more accessible for the user.', 'Integrated MongoDB to stockpile and query through user data such as added courses, assignments, marks, and more to calculate and send up-to-date progress reports.'],
+        tags: ['Discord.js', 'JavaScript', 'MongoDB', 'Mongoose', 'Git'],
         image: '../media/discordbot.jpg',
         color: '#357C3C',
     },
@@ -136,8 +136,8 @@ const text = {
     GITPAGES: {
         title: 'Ricky Tran',
         subtitle: 'Personal Portfolio',
-        points: ['Developed a simple website resume using HTML, CSS, and JavaScript.', 'Utilized Github Pages to statically host a website.','Implemented Vue Components to simplify the process of adding onto the website'],
-        tags: ['HTML', 'JavaScript', 'CSS', 'Vue.js', 'Git Pages'],
+        points: ['Investigated, learned and applied new technologies/processes such as Vue.js to the portfolio.', 'Prototyped the websites design on Figma to ensure its responsiveness, look, and feel across devices encourage visitors to explore more.'],
+        tags: ['HTML', 'JavaScript', 'CSS', 'Vue.js 2.0', 'Git Pages'],
         image: '../media/webfolio.jpg',
         color: '#B33030',
     },
@@ -149,7 +149,25 @@ const text = {
         tags: ['C++','Arduino Uno', 'IRLZ44N', 'KY-037 Sound Sensor'],
         image: '../media/arduino.png',
         color: '#1C658C',
-    }
+    },
+
+    CODEBOT: {
+        title: 'Code Compiler Bot',
+        subtitle: 'More Advanced Personalized Bot',
+        points: ["Developing a Discord Bot that uses JDoodle's Compiler RESTful API to enable users to compile and execute code on Discord using simple commands.", 'Integrating MySQL Database to store user data and help make course progress reports and averages more accessible through commands.'],
+        tags: ['Discord.py', 'RESTFUL API', 'Requests', 'MySQL', 'SQL', 'Python'],
+        image: '../media/restful.png',
+        color: '#645CAA',
+    },
+
+    ACCOUNTSYS: {
+        title: 'MySQL Accounts System',
+        subtitle: 'SQL Practice Project',
+        points: ['Developed an account system using MySQL database to uniquely store case-sensitive usernames and passwords.', 'Implemented login and sign up functionality to allow users to view, access and edit the account system via utilizing admin privileges, creating accounts, or logging into existing accounts.'],
+        tags: ['Python', 'MySQL', 'MySQL-Connector'],
+        image: '../media/mysql.png',
+        color: '#CC9B14',
+    },
 }
 
 const TAGS = new Vue({el: '#TLDR-TAGS'});
@@ -163,3 +181,5 @@ const FINTECH = new Vue({el: '#FINTECH'});
 const DISCORD = new Vue({el: '#DISCORD'});
 const GITPAGES = new Vue({el: '#GITPAGES'});
 const ARDUINO = new Vue({el: '#ARDUINO'});
+const CODEBOT = new Vue({el: '#CODEBOT'});
+const ACCOUNTSYS = new Vue({el: '#ACCOUNTSYS'});
