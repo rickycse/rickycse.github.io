@@ -79,14 +79,14 @@ const text = {
     YORK: {
         title: 'York University',
         subtitle: 'Hons. B.Sc Computer Science Student (Co-op)',
-        points: ['CGPA: 3.3 / 4.0', 'Notable Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
+        points: ['CGPA: 3.2 / 4.0', 'Related Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
         image: '../media/lassondeschool.jpg',
     },
     // WORK EXPERIENCE
     MR901: {
         title: 'Software Engineer Intern',
         subtitle: 'MyRide901',
-        points: ['Developing automated regression test cases using Selenium WebDriver', 'Collaborating with the development team and QA engineers to resolve bugs in the APK using Java.', 'Configuring event tracking and custom dimensions in Google Analytics to capture user interactions and behavior and improve data accuracy by resolving tracking discrepancies.'],
+        points: ['Developed and debugged Android app features using Dart, PHP, and Laravel, resulting in improved app functionality, user engagement, and decreased unexpected crashes.', 'Integrated Google AdMob to mobile and web apps, achieving a 15% increase in ad engagement and a 20% boost in overall revenue through effective targeting and A/B testing.', 'Created automated regression test cases for an Android application using Appium and Python, resulting in a 75% increase in test coverage and efficiency.'],
         tags: ['PHP', 'Laravel', 'Selenium', 'Firebase', 'Google Analytics', 'Android APK', 'Java', 'Git', 'Jira'],
         color: "#313552",
         image: '../media/myride901.png',
@@ -104,34 +104,19 @@ const text = {
     CSHUB: {
         title: 'Computing Students Hub',
         subtitle: 'Front-End Developer',
-        points: ['Collaborated with back-end teams to develop a web application for over 1500+ community members using React.js, and MaterialUI.','Created and reviewed technical design documents for the clubs’ web applications using Figma to ensure its robustness, reliability, and, scalability.'],
+        points: ['Collaborated with back-end developers to create an online merch store for 1500+ community members using React.js, JavaScript, and MaterialUI, resulting in increased club memberships and funds.', 'Designed an interactive prototype of the website using Figma and modeled reusable React.js components.'],
         tags: ['React.js', 'MaterialUI', 'JavaScript', 'Git', 'Jira'],
         color: '#B33030',
         image: '../media/cshub.png',
     },
 
-    YORKUIT: {
-        title: 'York UIT Client Services',
-        subtitle: 'Computing Support Assistant',
-        points: ['Providing technical support and troubleshooting for internal and external customers via phone, email, and ticketing system, ensuring timely and effective resolution of technical issues and customer satisfaction.', 'Staying abreast of industry technical and business trends to provide clients with the utmost support.'],
-        image: '../media/yorkuit.png',
-    },
-
     // PROJECTS
-    PYGAME: {
-        title: 'Jellyfish Blaster',
-        subtitle: 'Animated Python Game',
-        points: ['Developed a fast-paced platformer game using PyGame and Asprites to challenge the users hand-eye coordination', 'Efficiently sorted asprite frames into different directories for efficient reading using the OS Module.'],
-        tags: ['Python', 'Pygame', 'Sprites', 'Os Module'],
-        image: '../media/arcadepygame.jpg',
-        color: '#1C658C',
-    }, 
 
     FINTECH: {
         title: 'Fintechify',
         subtitle: 'Banking Android App',
-        points: ['Led a team of 3 other members to develop a mobile banking app that lets users deposit, withdraw, calculate taxes, and so on using Java, OkHttp3, and Android Studio.', 'Created and reviewed technical design documents on Figma for coherent designs and facilitated meetings to design, troubleshoot, and execute the project in Java.'],
-        tags: ['Java', 'OkHttp3', 'Android Widgets', 'Figma'],
+        points: ['Collaborated with 3 other students to develop a mobile banking application using Java with features such as money depositing, withdrawal, and e-transferring.', 'Designed wireframes using Figma to ensure a comprehensive and responsive user interface.'],
+        tags: ['Java', 'OkHttp3', 'Android', 'Figma'],
         image: '../media/fintechify.png',
         color: '#645CAA',
     },
@@ -139,7 +124,7 @@ const text = {
     DISCORDBOT: {
         title: 'Grade Reports Bot',
         subtitle: 'Academia Discord Bot',
-        points: ['Developed a Discord Bot with Node.js to make degree progress reports more accessible for the user.', 'Integrated MongoDB to stockpile and query through user data such as added courses, assignments, marks, and more to calculate and send up-to-date progress reports.'],
+        points: ['Created a Discord Bot using Node.js to send progress reports containing the users course average and necessary grades to achieve their academic goals.', 'Integrated MongoDB to store and retrieve the users enrolled courses, assignments, and grades.'],
         tags: ['Discord.js', 'JavaScript', 'MongoDB', 'Mongoose', 'Git'],
         image: '../media/discordbot.jpg',
         color: '#42855B',
@@ -148,7 +133,7 @@ const text = {
     GITPAGES: {
         title: 'Ricky Tran',
         subtitle: 'Personal Portfolio',
-        points: ['Investigated, learned and applied new technologies/processes such as Vue.js to the portfolio.', 'Prototyped the websites design on Figma to ensure its responsiveness, look, and feel across devices encourage visitors to explore more.'],
+        points: ['Created and prototyped designs on Figma to ensure the portfolio’s responsiveness, look, and feel across devices encourage visitors to explore more.', 'Leveraged Vue.js to create reusable web components, reducing code repetition and ensuring readability.'],
         tags: ['HTML', 'JavaScript', 'CSS', 'Vue.js 2.0', 'Git Pages'],
         image: '../media/webfolio.jpg',
         color: '#B33030',
@@ -163,28 +148,10 @@ const text = {
         color: '#1C658C',
     },
 
-    CODEBOT: {
-        title: 'Code Compiler Bot',
-        subtitle: 'More Advanced Personalized Bot',
-        points: ["Developing a Discord Bot that uses JDoodle's Compiler RESTful API to enable users to compile and execute code on Discord using simple commands.", 'Integrating MySQL Database to store user data and help make course progress reports and averages more accessible through commands.'],
-        tags: ['Discord.py', 'RESTFUL API', 'Requests', 'MySQL', 'SQL', 'Python'],
-        image: '../media/mysql.png',
-        color: '#CC9B14',
-    },
-
-    ACCOUNTSYS: {
-        title: 'MySQL Accounts System',
-        subtitle: 'SQL Practice Project',
-        points: ['Developed an account system using MySQL database to uniquely store case-sensitive usernames and passwords.', 'Implemented login and sign up functionality to allow users to view, access and edit the account system via utilizing admin privileges, creating accounts, or logging into existing accounts.'],
-        tags: ['Python', 'MySQL', 'MySQL-Connector'],
-        image: '../media/mysql.png',
-        color: '#CC9B14',
-    },
-
     POKEDEX: {
         title: 'Pokemon Search Engine',
         subtitle: 'React Project',
-        points: ['Developed a web application using React to search and filter Pokemon by names and types.', 'Integrated REST Poke API to fetch and display data about Pokemon, and created reusable components for the data using React across mobile devices.'],
+        points: ['Leveraged React.js and TailwindCSS to create a Pokemon Search Engine with searching and sorting features by Pokemon names and types.', 'Utilized PokeAPI to retrieve data for 800+ different types of Pokemon and created reusable cards to display Pokemon names, types, and images across multiple devices.'],
         tags: ['React.js', 'JavaScript', 'REST API', 'TailwindCSS'],
         image: '../media/pokedex.jpg',
         color: '#645CAA',
@@ -193,7 +160,7 @@ const text = {
     LOGIN: {
         title: 'Login System',
         subtitle: 'MERN Stack Project',
-        points: ['Developed a login system using React and TailwindCSS with login, sign up, and reset password features.', 'Leveraged Express.js to create routing for endpoints, handled HTTP status codes, and error handling, with MongoDB in the back end server side.'],
+        points: ['Developed a Login System using React.js and TailwindCSS with features such as login, register, and reset password with emailed OPT codes and JWT password encryption.', 'Implemented RESTful API endpoints using Express.js for user authentication and password hashing, and utilized MongoDB to store user credentials, ensuring data integrity and scalability.'],
         tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'TailwindCSS', 'Axios'],
         image: '../media/login.png',
         color: '#42855B',
@@ -205,13 +172,9 @@ const TAGS = new Vue({el: '#TLDR-TAGS'});
 const LASSONDE = new Vue({el: '#LASSONDE'});
 const GDSC = new Vue({el: '#GDSC'});
 const CSHUB = new Vue({el: '#CSHUB'});
-const YORKUIT = new Vue({el: '#YORKUIT'});
-const PYGAME = new Vue({el: '#PYGAME'});
 const FINTECH = new Vue({el: '#FINTECH'});
 const DISCORD = new Vue({el: '#DISCORD'});
 const GITPAGES = new Vue({el: '#GITPAGES'});
-const ARDUINO = new Vue({el: '#ARDUINO'});
-const CODEBOT = new Vue({el: '#CODEBOT'});
 const POKEDEX = new Vue({el: '#POKEDEX'});
 const LOGIN = new Vue({el: '#LOGIN'});
 
