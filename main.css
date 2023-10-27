@@ -120,7 +120,7 @@ Home Page
 }
 
 .home-container {
-    width: 60%;
+    width: 70%;
     text-align: center;
     font-weight: bold;
     font-size: 48px;
@@ -166,13 +166,8 @@ Home Page
     overflow: hidden;
 }
 
-.body-container .container {
-    position: relative;
-    margin-top: 10vh;
-}
-
 section {
-    width: 60vw;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -180,10 +175,8 @@ section {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
-
-    position: absolute;
-    top: 0;
-    left: 50px;
+    text-align: center;
+    margin: 9vh 0 4vh 0;
 }
 
 .items {
@@ -193,6 +186,8 @@ section {
     margin: 0.5rem 0 1.25rem 0;
 
     font-size: 16px;
+    width: 100%;
+    height: 50%;
 }
 
 .items .text-container {
@@ -219,12 +214,9 @@ section {
     padding: 2px;
 }
 
-.items .image-container {
-    display: flex;
-}
-
-.items .image-container img {
-    max-width: 100%;
+.items img {
+    width: 100%;
+    height: 100%;
     border-radius: 12px;
 }
 
@@ -274,7 +266,7 @@ CONTACTS
 }
 
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1520px){
     .container {
         margin-top: 8vh;
     }
@@ -285,6 +277,7 @@ CONTACTS
         font-size: 32px;
     }
     .home-container {
+        width: 65%;
         font-size: 36px;
     }
     .items {
@@ -303,14 +296,13 @@ CONTACTS
         font-size: 24px;
     }
     .home-container {
-        width: 70%;
         font-size: 32px;
     }
     .container {
         margin-top: 2vh;
     }
     section {
-        width: 80vw;
+        width: 80%;
     }
     .section-title {
         position: relative;
@@ -329,7 +321,7 @@ CONTACTS
         display: none;
     }
     section {
-        width: 95vw;
+        width: 95%;
     }
     .main-nav ul {
         width: 80%;
@@ -373,7 +365,7 @@ CONTACTS
 
 @media (max-width: 320px){
     section {
-        width: 100vw;
+        width: 100%;
     }
     .section-title {
         font-size: 28px;

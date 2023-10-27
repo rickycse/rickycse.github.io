@@ -8,9 +8,7 @@ Vue.component('leftblock',{
 
     template: 
     `<div class="items">
-        <div class="image-container">
-            <img class="img" v-bind:src="text.image">
-        </div>
+        <img class="img" v-bind:src="text.image">
         <div class="text-container"> 
             <div class="item-title">{{text.title}}</div>
             <div class="item-subtitle">{{text.subtitle}}</div>
@@ -45,9 +43,7 @@ Vue.component('rightblock',{
                 <li v-for="tag in text.tags" :style="{ 'backgroundColor': text.color}">{{tag}}</li>
             </ul>
         </div>
-        <div class="image-container">
-            <img class="img" v-bind:src="text.image">
-        </div>
+        <img class="img" v-bind:src="text.image">
     </div>
     `
 });
@@ -86,8 +82,13 @@ const text = {
     MR901: {
         title: 'Software Engineer Intern',
         subtitle: 'MyRide901',
-        points: ['Developed and debugged Android app features using Dart, PHP, and Laravel, resulting in improved app functionality, user engagement, and decreased unexpected crashes.', 'Integrated Google AdMob to mobile and web apps, achieving a 15% increase in ad engagement and a 20% boost in overall revenue through effective targeting and A/B testing.', 'Created automated regression test cases for an Android application using Appium and Python, resulting in a 75% increase in test coverage and efficiency.'],
-        tags: ['PHP', 'Laravel', 'Selenium', 'Firebase', 'Google Analytics', 'Android APK', 'Java', 'Git', 'Jira'],
+        points: [
+            'Developed Android app UI features and endpoints using Dart, PHP, and Laravel, resulting in an increase in user engagement and a decrease in app loading time.', 
+            'Integrated Google AdMob to an Android app, achieving a 100% increase in ad engagement and a 20% boost in overall revenue through effective targeting and A/B testing.', 
+            'Created automated regression test cases for an Android application using Selenium, resulting in a 75% increase in test coverage and efficiency.',
+            'Leveraged Python, AWS, and Google Data API to create an automated script to report in-app analytics to support data-driven decisions.'
+        ],
+        tags: ['Python', 'AWS', 'Dart', 'PHP', 'Laravel', 'Android', 'Selenium', 'Google Analytics'],
         color: "#313552",
         image: '../media/myride901.png',
     },
@@ -95,8 +96,11 @@ const text = {
     GDSC: {
         title: 'Google Developers Student Club',
         subtitle: 'Technical Lead',
-        points: ['Acting as a trusted mentor for over 1000+ community members, sharing knowledge and expertise on projects involving Python, SQL, Git, and more to help members reach their technical goals.', 'Collaborating with other clubs and organizations to host relevant workshops and activities for the club'],
-        tags: ['Python', 'Selenium', 'Java', 'Git', 'JavaScript', 'React.js'],
+        points: [
+            'Acting as a trusted mentor for over 2000+ community members, sharing expertise on projects involving Java and Python to help members reach their technical goals.', 
+            'Collaborating with other clubs and organizations to host relevant workshops and activities for the club'
+        ],
+        tags: ['Python', 'Java', 'JavaScript', 'React.js'],
         color: "#0F0E0E",
         image: '../media/gdsc.png',
     },
@@ -110,8 +114,33 @@ const text = {
         image: '../media/cshub.png',
     },
 
-    // PROJECTS
+    // COMPETITIONS 
+    HTN: {
+        title: 'Hack The North 2023',
+        subtitle: 'Piktocache',
+        points: [
+            'Leveraged React.js and Firebase to create a chatroom for users with shared IP addresses.', 
+            'Utilized Firebase Auth to enable Google sign-in and added security rules to prevent chat vulnerabilities.',
+            'Implemented drawing canvases and image sharing using JavaScript and HTML/CSS.'
+        ],
+        tags: ['React.js', 'MaterialUI', 'JavaScript', 'Git', 'Jira'],
+        color: '#645CAA',
+        image: '../media/htn.jpg',
+    },
+    HTV: {
+        title: 'Hack The Valley 2023',
+        subtitle: 'Moodify',
+        points: [
+            'Developed a web application that analyzes a user’s Spotify playlist and recommends songs based on their specified moods using React.js, Typescript, and HTML/CSS.', 
+            'Implemented backend systems using Express.js and Node.js to retrieve songs from the Spotify API.',
+            'Trained the Cohere API to map song lyrics to emotions and used Flask to return emotion-aligned songs.'
+        ],
+        tags: ['React.js', 'MaterialUI', 'JavaScript', 'Git', 'Jira'],
+        color: '#42855B',
+        image: '../media/htv.png',
+    },
 
+    // PROJECTS
     FINTECH: {
         title: 'Fintechify',
         subtitle: 'Banking Android App',
@@ -167,15 +196,24 @@ const text = {
     },
 }
 
+// Home
 const TAGS = new Vue({el: '#TLDR-TAGS'});
 
+// Education
 const LASSONDE = new Vue({el: '#LASSONDE'});
+
+// Experience
+const MR901 = new Vue({el: '#MR901'});
 const GDSC = new Vue({el: '#GDSC'});
 const CSHUB = new Vue({el: '#CSHUB'});
+
+// Competitions
+const HTN = new Vue({el: '#HTN'});
+const HTV = new Vue({el: '#HTV'});
+
+// Projects
 const FINTECH = new Vue({el: '#FINTECH'});
 const DISCORD = new Vue({el: '#DISCORD'});
 const GITPAGES = new Vue({el: '#GITPAGES'});
 const POKEDEX = new Vue({el: '#POKEDEX'});
 const LOGIN = new Vue({el: '#LOGIN'});
-
-const MR901 = new Vue({el: '#MR901'});
