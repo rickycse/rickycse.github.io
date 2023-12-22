@@ -1,4 +1,4 @@
-Vue.component('leftblock',{
+Vue.component('block',{
     props: ['title', 'subtitle'],
     data: function() {
         return {
@@ -19,31 +19,6 @@ Vue.component('leftblock',{
                 <li v-for="tag in text.tags" :style="{ 'backgroundColor': text.color}">{{tag}}</li>
             </ul>
         </div>
-    </div>
-    `
-});
-
-Vue.component('rightblock',{
-    props: ['title', 'subtitle'],
-    data: function() {
-        return {
-            text: text[this.title]
-        }
-    },
-
-    template: 
-    `<div class="items">
-        <div class="text-container"> 
-            <div class="item-title">{{text.title}}</div>
-            <div class="item-subtitle">{{text.subtitle}}</div>
-            <ul class="item-body">
-                <li v-for="point in text.points">{{point}}</li>
-            </ul>
-            <ul class="item-tags">
-                <li v-for="tag in text.tags" :style="{ 'backgroundColor': text.color}">{{tag}}</li>
-            </ul>
-        </div>
-        <img class="img" v-bind:src="text.image">
     </div>
     `
 });
@@ -88,7 +63,7 @@ const text = {
             'Created automated regression test cases for an Android application using Selenium, resulting in a 75% increase in test coverage and efficiency.',
             'Leveraged Python, AWS, and Google Data API to create an automated script to report in-app analytics to support data-driven decisions.'
         ],
-        tags: ['Python', 'AWS', 'Dart', 'PHP', 'Laravel', 'Android', 'Selenium', 'Google Analytics'],
+        tags: ['Python', 'AWS', 'Dart', 'PHP', 'Laravel', 'Android', 'Appium'],
         color: "#313552",
         image: '../media/myride901.png',
     },
@@ -101,7 +76,7 @@ const text = {
             'Collaborating with other clubs and organizations to host relevant workshops and activities for the club'
         ],
         tags: ['Python', 'Java', 'JavaScript', 'React.js'],
-        color: "#0F0E0E",
+        color: "#000",
         image: '../media/gdsc.png',
     },
 

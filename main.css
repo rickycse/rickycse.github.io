@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #181B21;
+    background-color: #0b0d0f;
     color: var(--dark-bg-text);
     animation: fadein 0.5s ease-in;
 }
@@ -78,7 +78,7 @@ Open Resume
 }
 
 .scrolled {
-    background-color: #181B21 !important;
+    background-color: #0b0d0f !important;
     transition: background-color 200ms linear;
 }
 
@@ -95,7 +95,8 @@ Open Resume
 }
 
 .main-nav li a:hover {
-    font-size: 1.1em;
+    font-size: 1.05em;
+    text-decoration: underline;
 }
 
 .main-nav li a {
@@ -120,7 +121,7 @@ Home Page
 }
 
 .home-container {
-    width: 70%;
+    width: 60%;
     text-align: center;
     font-weight: bold;
     font-size: 48px;
@@ -169,29 +170,40 @@ Home Page
 section {
     width: 65%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .section-title {
-    font-size: 40px;
+    font-size: 56px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 9vh 0 4vh 0;
+    margin: 10vh 0 0 0;
 }
 
 .items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    margin: 0.5rem 0 1.25rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 
+    max-width: 100%;
+    padding: 1em;
+
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(70, 70, 70, 0.5);
     font-size: 16px;
-    width: 100%;
-    height: 50%;
 }
 
-.items .text-container {
-    margin: 0.8rem;
+.items:hover {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .items .item-title {
@@ -205,13 +217,18 @@ section {
     color: #BBBBBB;
 }
 
+.items .text-container {
+    width: 80%;
+}
+
 .items .item-body {
     margin-left: 24px;
     font-size: 1.25em;
 }
 
-.items .item-body li {
-    padding: 2px;
+
+.items .img {
+    width: 50%;
 }
 
 .items img {
@@ -243,13 +260,16 @@ CONTACTS
 ========
 */
 
-.contacts img{
-    width: 3rem;
-    border: none;
+.contacts {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
 }
 
-.contacts {
-    text-align: center;
+.contacts img {
+    width: 3rem;
+    border: none;
 }
 
 .contacts a {
@@ -320,8 +340,11 @@ CONTACTS
     img.download {
         display: none;
     }
+    div.items {
+        flex-direction: column;
+    }
     section {
-        width: 95%;
+        width: 90%;
     }
     .main-nav ul {
         width: 80%;
@@ -339,6 +362,10 @@ CONTACTS
 }
 
 @media (max-width: 480px){
+    div.items img {
+        display: none;
+    }
+
     img.download {
         display: none;
     }
@@ -353,9 +380,6 @@ CONTACTS
         width: 95%;
     }
     .items {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        column-gap: 0.5rem;
         font-size: 10px;
     }
     .items .text-container {
