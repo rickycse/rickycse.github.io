@@ -41,7 +41,7 @@ Vue.component('tags',{
 
 const tags = {
     TLDR: {
-        tags: ['Python', 'Java', 'JavaScript', 'HTML', 'CSS', 'MongoDB', 'MySQL', 'React.js', 'Node.js', 'Express.js', 'Git', 'Jira'],
+        tags: ['Python', 'Java', 'JavaScript', 'Typescript', 'React', 'MongoDB', 'MySQL', 'Node.js', 'Express.js', 'Backstage', 'Flask'],
         color: '#565C5B'
     }
 }
@@ -54,14 +54,37 @@ const text = {
         image: '../media/lassondeschool.jpg',
     },
     // WORK EXPERIENCE
+    RBC: {
+        title: 'Software Engineer Intern',
+        subtitle: 'RBC',
+        points: [
+            "Scaled backend services for internal RBC platforms with Python and Flask to support 10,000+ new users and business units while enforcing role-based access controls.",
+            "Developed onboarding tools for 10+ departments and new business units to adhere to new enterprise-wide security standards and architecture using React.ts, Backstage, and Flask.",
+            "Automated AI tool adoption to enable faster access to AI-powered coding assistants and security scanners, improving developer productivity by 4–8x using SpringBoot and React.ts."
+        ],
+        tags: ['Flask', 'React', 'Typescript', 'Backstage', 'Express.js', 'Springboot', 'Python'],
+        color: "#3399FF",
+        image: '../media/rbc-logo.jpg',
+    },
+    TD: {
+        title: 'Data Engineer Intern',
+        subtitle: 'TD Bank',
+        points: [
+            "Developed machine learning models for test case prioritization, removing redundant test cases and speeding up the software testing process by 31% using Python and Scikit-learn.",
+            "Implemented data pipelines to transfer and classify test case data into our predictive models, reducing manual effort from 80 hours to 4 hours using Python, Pandas, and NumPy.", 
+            "Assisted with migrations from SOATest to REST Assured using Java to enhance test case generation and accuracy"
+        ],
+        tags: ['Python', 'Numpy', 'Scikit-learn', 'Pandas', 'Jupyter', 'Selenium', 'JSQL'],
+        color: "#009900",
+        image: '../media/td-logo.jpg',
+    },
     MR901: {
         title: 'Software Engineer Intern',
         subtitle: 'MyRide901',
         points: [
-            'Developed Android app UI features and endpoints using Dart, PHP, and Laravel, resulting in an increase in user engagement and a decrease in app loading time.', 
-            'Integrated Google AdMob to an Android app, achieving a 100% increase in ad engagement and a 20% boost in overall revenue through effective targeting and A/B testing.', 
-            'Created automated regression test cases for an Android application using Selenium, resulting in a 75% increase in test coverage and efficiency.',
-            'Leveraged Python, AWS, and Google Data API to create an automated script to report in-app analytics to support data-driven decisions.'
+            "Developed Android app features (Vehicle Details and Maintenance Timeline) using Dart, resulting in a 45% boost in user engagement, insights, and session durations.",
+            "Integrated CORS and rate-limiting functionality to backend APIs using PHP and Laravel to ensure secure, controlled access and prevent spam from third-party attacks.",
+            "Led and integrated Google AdMob advertisements in Dart, enhancing revenue through improved ad engagement."
         ],
         tags: ['Python', 'AWS', 'Dart', 'PHP', 'Laravel', 'Android', 'Appium'],
         color: "#313552",
@@ -116,6 +139,15 @@ const text = {
     },
 
     // PROJECTS
+    PREMAILS: {
+        title: 'Proper Email Rejections',
+        subtitle: 'Chrome Extension',
+        points: ["Created a chrome extension that rewrites boring job rejection emails to harsh, but funny and motivating messages.",
+            "Implemented a backend service for the extension to hide secret API keys and added rate limits to prevent spam attacks"],
+        tags: ['Python', 'React', 'Typescript', 'Flask', 'Cohere API', 'TailwindCSS'],
+        image: '../media/restful.png',
+        color: '#645CAA',
+    },
     FINTECH: {
         title: 'Fintechify',
         subtitle: 'Banking Android App',
@@ -178,6 +210,8 @@ const TAGS = new Vue({el: '#TLDR-TAGS'});
 const LASSONDE = new Vue({el: '#LASSONDE'});
 
 // Experience
+const RBC = new Vue({el: '#RBC'});
+const TD = new Vue({el: '#TD'});
 const MR901 = new Vue({el: '#MR901'});
 const GDSC = new Vue({el: '#GDSC'});
 const CSHUB = new Vue({el: '#CSHUB'});
@@ -187,6 +221,7 @@ const HTN = new Vue({el: '#HTN'});
 const HTV = new Vue({el: '#HTV'});
 
 // Projects
+const PREMAILS = new Vue({el: '#PREMAILS'});
 const FINTECH = new Vue({el: '#FINTECH'});
 const DISCORD = new Vue({el: '#DISCORD'});
 const GITPAGES = new Vue({el: '#GITPAGES'});
