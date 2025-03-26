@@ -50,7 +50,7 @@ const text = {
     YORK: {
         title: 'York University',
         subtitle: 'Hons. B.Sc Computer Science Student (Co-op)',
-        points: ['CGPA: 3.2 / 4.0', 'Related Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
+        points: ['CGPA: 3.3 / 4.0', 'Related Courses: Advanced Object-Oriented Programming, Fundamentals of Data Structures, Programming for Mobile Computing, Discrete Mathematics, Introduction to Computer Science and Programming.'],
         image: '../media/lassondeschool.jpg',
     },
     // WORK EXPERIENCE
